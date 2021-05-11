@@ -52,8 +52,8 @@ for i in a:
     ang = rg.Vector3d.VectorAngle(s,i)
     angleList.append(ang)
     
-#c = angleList
-print(c)
+c = angleList
+#print(c)
 
 #
 #4. explode the mesh - convert each face of the mesh into a mesh

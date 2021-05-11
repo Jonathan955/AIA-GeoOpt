@@ -63,8 +63,10 @@ c = angleList
 #
 
 md = rg.Mesh.Duplicate(m)
-for i in range(len(md.faces)):
-    mef = md.Faces.ExtractFaces([0])
-    exploded.append(mef)
+mdf = md.Faces.Count
+exploded = []
+for i in range(mdf):
+    emf = md.Faces.ExtractFaces([0])
+    exploded.append(emf)
 d = exploded
 #print(d)
